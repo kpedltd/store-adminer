@@ -1,6 +1,7 @@
-﻿namespace StoreAdminer.Data.Services {
-    public class Endpoints {
-
+﻿namespace StoreAdminer.Data.Services
+{
+    public class Endpoints
+    {
         public static readonly string LOGIN = "login";
         public static readonly string REFRESH_TOKEN = "refresh-token";
         public static readonly string REVOKE_TOKEN = "revoke-token";
@@ -16,6 +17,5 @@
         public static readonly string UPDATE_GOOD = "update-good";
         public static readonly string REMOVE_GOODS = "remove-goods";
         public static readonly string PRICE_HISTORY = "price-history";
-
     }
 }

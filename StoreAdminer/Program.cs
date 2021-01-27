@@ -1,14 +1,14 @@
-﻿using StoreAdminer.Data;
-using StoreAdminer.Forms;
+﻿using StoreAdminer.Forms;
 using System;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StoreAdminer {
-    static class Program {
-
+namespace StoreAdminer
+{
+    internal static class Program
+    {
         [STAThread]
-        static void Main() {
+        private static void Main()
+        {
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
 
