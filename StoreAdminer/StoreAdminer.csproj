@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7BB8AD3-F1A9-4C81-BE84-C00A78F4D70D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StoreAdminer</RootNamespace>
+    <AssemblyName>StoreAdminer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\CategoryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CategoryPage.Designer.cs">
+      <DependentUpon>CategoryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\GoodsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\GoodsPage.Designer.cs">
+      <DependentUpon>GoodsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\LoginScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MainScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Navigator.cs" />
+    <Compile Include="Components\Page.cs" />
+    <Compile Include="Components\PriceHistoryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\PriceHistoryPage.Designer.cs">
+      <DependentUpon>PriceHistoryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ProfilePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ProfilePage.Designer.cs">
+      <DependentUpon>ProfilePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Screen.cs" />
+    <Compile Include="Components\ScreenContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\UsersPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\UsersPage.Designer.cs">
+      <DependentUpon>UsersPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Data\CallFactoryProvider.cs" />
+    <Compile Include="Data\CookieProvider.cs" />
+    <Compile Include="Data\HttpError.cs" />
+    <Compile Include="Data\Models\ErrorResponse.cs" />
+    <Compile Include="Data\Models\Category.cs" />
+    <Compile Include="Data\Models\Good.cs" />
+    <Compile Include="Data\Models\Price.cs" />
+    <Compile Include="Data\Models\RefreshToken.cs" />
+    <Compile Include="Data\Models\User.cs" />
+    <Compile Include="Data\Models\JwtToken.cs" />
+    <Compile Include="Data\Request.cs" />
+    <Compile Include="Data\Services\Endpoints.cs" />
+    <Compile Include="Data\Services\GoodService.cs" />
+    <Compile Include="Data\Services\RefreshTokens.cs" />
+    <Compile Include="Data\Services\UserService.cs" />
+    <Compile Include="Data\RefreshTokenExpiredException.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Forms\AddUpdateCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddUpdateCategoryForm.Designer.cs">
+      <DependentUpon>AddUpdateCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddUpdateGoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddUpdateGoodForm.Designer.cs">
+      <DependentUpon>AddUpdateGoodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContainerForm.Designer.cs">
+      <DependentUpon>ContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GoodForm.Designer.cs">
+      <DependentUpon>GoodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\CategoryPage.resx">
+      <DependentUpon>CategoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\GoodsPage.resx">
+      <DependentUpon>GoodsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\PriceHistoryPage.resx">
+      <DependentUpon>PriceHistoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ProfilePage.resx">
+      <DependentUpon>ProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UsersPage.resx">
+      <DependentUpon>UsersPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddUpdateCategoryForm.resx">
+      <DependentUpon>AddUpdateCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddUpdateGoodForm.resx">
+      <DependentUpon>AddUpdateGoodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContainerForm.resx">
+      <DependentUpon>ContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GoodForm.resx">
+      <DependentUpon>GoodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
