@@ -1,19 +1,27 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace StoreAdminer.Data.Models {
-    class Order {
+    public class Order {
 
         [JsonProperty("id")]
         public int Id { get; set; }
         
-        [JsonProperty("user.id")]
+        [JsonProperty("userId")]
         public int UserId { get; set; }
 
-        [JsonProperty("user.login")]
+        [JsonProperty("userLogin")]
         public string UserLogin { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
+        
+        [JsonProperty("createdAt")]
+        public DateTime CreatedAt { get; set; }
+        
+        [JsonProperty("goods")]
+        public List<Good> Goods { get; set; }
 
     }
 }

@@ -20,15 +20,10 @@ namespace StoreAdminer.Data {
         public delegate Task<HttpResponseMessage> Interceptor(Request request);
         public Interceptor RequestInterceptor;
 
-        public HttpRequestHeaders Headers {
-            get => _httpClient.DefaultRequestHeaders;
-        }
+        public HttpRequestHeaders Headers => _httpClient.DefaultRequestHeaders;
 
         public static CallFactoryProvider GetInstance() {
-            if (_instance == null) {
-                _instance = new CallFactoryProvider();
-            }
-            return _instance;
+            return _instance ?? (_instance = new CallFactoryProvider());
         }
 
         private CallFactoryProvider() {

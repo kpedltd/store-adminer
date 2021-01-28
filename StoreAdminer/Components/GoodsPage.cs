@@ -21,6 +21,7 @@ namespace StoreAdminer.Components {
             gridView.Columns.Add("manufacturedAt", "Дата изготовления");
             gridView.Columns.Add("partNumber", "Артикул");
             gridView.Columns.Add("category", "Категория");
+            gridView.Columns.Add("amount", "Количество");
             gridView.Columns.Add("price", "Цена");
         }
 
@@ -43,6 +44,7 @@ namespace StoreAdminer.Components {
                 good.ManufacturedAt.ToString("dd.MM.yyyy"), 
                 good.PartNumber, 
                 categoryName,
+                good.Amount,
                 good.Price.ToString() + " руб."
                 );
         }
@@ -55,7 +57,8 @@ namespace StoreAdminer.Components {
             row.Cells[2].Value = good.ManufacturedAt.ToString("dd.MM.yyyy");
             row.Cells[3].Value = good.PartNumber;
             row.Cells[4].Value = categoryName;
-            row.Cells[5].Value = good.Price.ToString() + " руб.";
+            row.Cells[5].Value = good.Amount;
+            row.Cells[6].Value = good.Price.ToString() + " руб.";
         }
 
         private async void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e) {

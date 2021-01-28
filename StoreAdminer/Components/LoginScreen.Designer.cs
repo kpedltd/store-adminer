@@ -19,8 +19,8 @@ namespace StoreAdminer.Components {
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
@@ -71,7 +71,7 @@ namespace StoreAdminer.Components {
             // LoginLabel
             // 
             this.LoginLabel.AutoSize = true;
-            this.LoginLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.LoginLabel.Location = new System.Drawing.Point(0, 0);
             this.LoginLabel.Margin = new System.Windows.Forms.Padding(0);
             this.LoginLabel.Name = "LoginLabel";
@@ -82,7 +82,7 @@ namespace StoreAdminer.Components {
             // LoginTextBox
             // 
             this.LoginTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LoginTextBox.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginTextBox.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.LoginTextBox.Location = new System.Drawing.Point(0, 28);
             this.LoginTextBox.Margin = new System.Windows.Forms.Padding(0, 4, 0, 16);
             this.LoginTextBox.Name = "LoginTextBox";
@@ -92,7 +92,7 @@ namespace StoreAdminer.Components {
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.PasswordLabel.Location = new System.Drawing.Point(0, 74);
             this.PasswordLabel.Margin = new System.Windows.Forms.Padding(0);
             this.PasswordLabel.Name = "PasswordLabel";
@@ -103,7 +103,7 @@ namespace StoreAdminer.Components {
             // PasswordTextBox
             // 
             this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTextBox.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.PasswordTextBox.Location = new System.Drawing.Point(0, 102);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(0, 4, 0, 16);
             this.PasswordTextBox.Name = "PasswordTextBox";
@@ -113,7 +113,7 @@ namespace StoreAdminer.Components {
             // 
             // LoginButton
             // 
-            this.LoginButton.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginButton.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.LoginButton.Location = new System.Drawing.Point(4, 151);
             this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoginButton.Name = "LoginButton";
@@ -134,17 +134,16 @@ namespace StoreAdminer.Components {
             this.flowLayout.ResumeLayout(false);
             this.flowLayout.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
-        #endregion
-
-        private System.Windows.Forms.TableLayoutPanel RootLayout;
         private System.Windows.Forms.FlowLayoutPanel flowLayout;
+        private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.TextBox LoginTextBox;
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.TextBox PasswordTextBox;
-        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.TableLayoutPanel RootLayout;
+
+        #endregion
     }
 }

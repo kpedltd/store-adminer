@@ -31,14 +31,11 @@ namespace StoreAdminer.Data.Services {
             }
         }
 
-        private Hashtable _cachedUsers = new Hashtable();
-        private Hashtable _cachedTokens = new Hashtable();
+        private readonly Hashtable _cachedUsers = new Hashtable();
+        private readonly Hashtable _cachedTokens = new Hashtable();
 
         public static UserService GetInstance() {
-            if (_instance == null) {
-                _instance = new UserService();
-            }
-            return _instance;
+            return _instance ?? (_instance = new UserService());
         }
 
         private UserService() {

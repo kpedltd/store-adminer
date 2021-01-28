@@ -14,10 +14,7 @@ namespace StoreAdminer.Data.Services {
         private List<Category> _cachedCategories;
 
         public static GoodService GetInstance() {
-            if (_instance == null) {
-                _instance = new GoodService();
-            }
-            return _instance;
+            return _instance ?? (_instance = new GoodService());
         }
 
         private GoodService() {}

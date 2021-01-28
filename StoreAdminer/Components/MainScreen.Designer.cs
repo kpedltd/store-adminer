@@ -19,164 +19,162 @@ namespace StoreAdminer.Components {
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.Tabs = new System.Windows.Forms.TabControl();
-            this.ProfilePage = new System.Windows.Forms.TabPage();
-            this.profilePage1 = new StoreAdminer.Components.ProfilePage();
-            this.GoodsPage = new System.Windows.Forms.TabPage();
-            this.goodsPage1 = new StoreAdminer.Components.GoodsPage();
-            this.CategoryPage = new System.Windows.Forms.TabPage();
-            this.categoryPage1 = new StoreAdminer.Components.CategoryPage();
-            this.PriceHistoryPage = new System.Windows.Forms.TabPage();
-            this.priceHistoryPage1 = new StoreAdminer.Components.PriceHistoryPage();
-            this.UsersPage = new System.Windows.Forms.TabPage();
-            this.usersPage1 = new StoreAdminer.Components.UsersPage();
-            this.Tabs.SuspendLayout();
-            this.ProfilePage.SuspendLayout();
-            this.GoodsPage.SuspendLayout();
+            this.tabs = new System.Windows.Forms.TabControl();
+            this.profileTabPage = new System.Windows.Forms.TabPage();
+            this.profilePage = new StoreAdminer.Components.ProfilePage();
+            this.goodsTabPage = new System.Windows.Forms.TabPage();
+            this.goodsPage = new StoreAdminer.Components.GoodsPage();
+            this.categoryTabPage = new System.Windows.Forms.TabPage();
+            this.categoryPage = new StoreAdminer.Components.CategoryPage();
+            this.priceHistoryTabPage = new System.Windows.Forms.TabPage();
+            this.priceHistoryPage = new StoreAdminer.Components.PriceHistoryPage();
+            this.usersTabPage = new System.Windows.Forms.TabPage();
+            this.usersPage = new StoreAdminer.Components.UsersPage();
+            this.ordersTabPage = new System.Windows.Forms.TabPage();
+            this.ordersPage = new StoreAdminer.Components.OrdersPage();
+            this.tabs.SuspendLayout();
+            this.profileTabPage.SuspendLayout();
+            this.goodsTabPage.SuspendLayout();
+            this.categoryTabPage.SuspendLayout();
+            this.priceHistoryTabPage.SuspendLayout();
+            this.usersTabPage.SuspendLayout();
+            this.ordersTabPage.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Tabs
-            // 
-            this.Tabs.Controls.Add(this.ProfilePage);
-            this.Tabs.Controls.Add(this.GoodsPage);
-            this.Tabs.Controls.Add(this.CategoryPage);
-            this.Tabs.Controls.Add(this.PriceHistoryPage);
-            this.Tabs.Controls.Add(this.UsersPage);
-            this.Tabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tabs.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Tabs.Location = new System.Drawing.Point(0, 0);
-            this.Tabs.Name = "Tabs";
-            this.Tabs.SelectedIndex = 0;
-            this.Tabs.Size = new System.Drawing.Size(900, 600);
-            this.Tabs.TabIndex = 0;
-            // 
-            // ProfilePage
-            // 
-            this.ProfilePage.Controls.Add(this.profilePage1);
-            this.ProfilePage.Location = new System.Drawing.Point(4, 33);
-            this.ProfilePage.Name = "ProfilePage";
-            this.ProfilePage.Padding = new System.Windows.Forms.Padding(3);
-            this.ProfilePage.Size = new System.Drawing.Size(892, 563);
-            this.ProfilePage.TabIndex = 0;
-            this.ProfilePage.Text = "Профиль";
-            this.ProfilePage.UseVisualStyleBackColor = true;
-            // 
-            // profilePage1
-            // 
-            this.profilePage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.profilePage1.Location = new System.Drawing.Point(3, 3);
-            this.profilePage1.Margin = new System.Windows.Forms.Padding(0);
-            this.profilePage1.Name = "profilePage1";
-            this.profilePage1.Size = new System.Drawing.Size(886, 557);
-            this.profilePage1.TabIndex = 0;
-            // 
-            // GoodsPage
-            // 
-            this.GoodsPage.Controls.Add(this.goodsPage1);
-            this.GoodsPage.Location = new System.Drawing.Point(4, 33);
-            this.GoodsPage.Name = "GoodsPage";
-            this.GoodsPage.Size = new System.Drawing.Size(892, 563);
-            this.GoodsPage.TabIndex = 1;
-            this.GoodsPage.Text = "Товары";
-            this.GoodsPage.UseVisualStyleBackColor = true;
-            // 
-            // goodsPage1
-            // 
-            this.goodsPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.goodsPage1.Location = new System.Drawing.Point(0, 0);
-            this.goodsPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.goodsPage1.Name = "goodsPage1";
-            this.goodsPage1.Size = new System.Drawing.Size(892, 563);
-            this.goodsPage1.TabIndex = 0;
-            // 
-            // CategoryPage
-            // 
-            this.CategoryPage.Controls.Add(this.categoryPage1);
-            this.CategoryPage.Location = new System.Drawing.Point(4, 33);
-            this.CategoryPage.Name = "CategoryPage";
-            this.CategoryPage.Size = new System.Drawing.Size(892, 563);
-            this.CategoryPage.TabIndex = 2;
-            this.CategoryPage.Text = "Категории";
-            this.CategoryPage.UseVisualStyleBackColor = true;
-            // 
-            // categoryPage1
-            // 
-            this.categoryPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.categoryPage1.Location = new System.Drawing.Point(0, 0);
-            this.categoryPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.categoryPage1.Name = "categoryPage1";
-            this.categoryPage1.Size = new System.Drawing.Size(892, 563);
-            this.categoryPage1.TabIndex = 0;
-            // 
-            // PriceHistoryPage
-            // 
-            this.PriceHistoryPage.Controls.Add(this.priceHistoryPage1);
-            this.PriceHistoryPage.Location = new System.Drawing.Point(4, 33);
-            this.PriceHistoryPage.Name = "PriceHistoryPage";
-            this.PriceHistoryPage.Size = new System.Drawing.Size(892, 563);
-            this.PriceHistoryPage.TabIndex = 3;
-            this.PriceHistoryPage.Text = "История цен";
-            this.PriceHistoryPage.UseVisualStyleBackColor = true;
-            // 
-            // priceHistoryPage1
-            // 
-            this.priceHistoryPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.priceHistoryPage1.Location = new System.Drawing.Point(0, 0);
-            this.priceHistoryPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.priceHistoryPage1.Name = "priceHistoryPage1";
-            this.priceHistoryPage1.Size = new System.Drawing.Size(892, 563);
-            this.priceHistoryPage1.TabIndex = 0;
-            // 
-            // UsersPage
-            // 
-            this.UsersPage.Controls.Add(this.usersPage1);
-            this.UsersPage.Location = new System.Drawing.Point(4, 33);
-            this.UsersPage.Name = "UsersPage";
-            this.UsersPage.Size = new System.Drawing.Size(892, 563);
-            this.UsersPage.TabIndex = 4;
-            this.UsersPage.Text = "Пользователи";
-            this.UsersPage.UseVisualStyleBackColor = true;
-            // 
-            // usersPage1
-            // 
-            this.usersPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usersPage1.Location = new System.Drawing.Point(0, 0);
-            this.usersPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.usersPage1.Name = "usersPage1";
-            this.usersPage1.Size = new System.Drawing.Size(892, 563);
-            this.usersPage1.TabIndex = 0;
-            // 
-            // MainScreen
-            // 
+            this.tabs.Controls.Add(this.profileTabPage);
+            this.tabs.Controls.Add(this.goodsTabPage);
+            this.tabs.Controls.Add(this.categoryTabPage);
+            this.tabs.Controls.Add(this.priceHistoryTabPage);
+            this.tabs.Controls.Add(this.usersTabPage);
+            this.tabs.Controls.Add(this.ordersTabPage);
+            this.tabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabs.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.tabs.Location = new System.Drawing.Point(0, 0);
+            this.tabs.Name = "tabs";
+            this.tabs.SelectedIndex = 0;
+            this.tabs.Size = new System.Drawing.Size(900, 600);
+            this.tabs.TabIndex = 0;
+            this.profileTabPage.Controls.Add(this.profilePage);
+            this.profileTabPage.Location = new System.Drawing.Point(4, 33);
+            this.profileTabPage.Name = "profileTabPage";
+            this.profileTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.profileTabPage.Size = new System.Drawing.Size(892, 563);
+            this.profileTabPage.TabIndex = 0;
+            this.profileTabPage.Text = "Профиль";
+            this.profileTabPage.UseVisualStyleBackColor = true;
+            this.profilePage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.profilePage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.profilePage.Location = new System.Drawing.Point(3, 3);
+            this.profilePage.Margin = new System.Windows.Forms.Padding(0);
+            this.profilePage.Name = "profilePage";
+            this.profilePage.Screen = null;
+            this.profilePage.Size = new System.Drawing.Size(886, 557);
+            this.profilePage.TabIndex = 0;
+            this.goodsTabPage.Controls.Add(this.goodsPage);
+            this.goodsTabPage.Location = new System.Drawing.Point(4, 33);
+            this.goodsTabPage.Name = "goodsTabPage";
+            this.goodsTabPage.Size = new System.Drawing.Size(892, 563);
+            this.goodsTabPage.TabIndex = 1;
+            this.goodsTabPage.Text = "Товары";
+            this.goodsTabPage.UseVisualStyleBackColor = true;
+            this.goodsPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.goodsPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.goodsPage.Location = new System.Drawing.Point(0, 0);
+            this.goodsPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.goodsPage.Name = "goodsPage";
+            this.goodsPage.Screen = null;
+            this.goodsPage.Size = new System.Drawing.Size(892, 563);
+            this.goodsPage.TabIndex = 0;
+            this.categoryTabPage.Controls.Add(this.categoryPage);
+            this.categoryTabPage.Location = new System.Drawing.Point(4, 33);
+            this.categoryTabPage.Name = "categoryTabPage";
+            this.categoryTabPage.Size = new System.Drawing.Size(892, 563);
+            this.categoryTabPage.TabIndex = 2;
+            this.categoryTabPage.Text = "Категории";
+            this.categoryTabPage.UseVisualStyleBackColor = true;
+            this.categoryPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.categoryPage.Location = new System.Drawing.Point(0, 0);
+            this.categoryPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.categoryPage.Name = "categoryPage";
+            this.categoryPage.Screen = null;
+            this.categoryPage.Size = new System.Drawing.Size(892, 563);
+            this.categoryPage.TabIndex = 0;
+            this.priceHistoryTabPage.Controls.Add(this.priceHistoryPage);
+            this.priceHistoryTabPage.Location = new System.Drawing.Point(4, 33);
+            this.priceHistoryTabPage.Name = "priceHistoryTabPage";
+            this.priceHistoryTabPage.Size = new System.Drawing.Size(892, 563);
+            this.priceHistoryTabPage.TabIndex = 3;
+            this.priceHistoryTabPage.Text = "История цен";
+            this.priceHistoryTabPage.UseVisualStyleBackColor = true;
+            this.priceHistoryPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.priceHistoryPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.priceHistoryPage.Location = new System.Drawing.Point(0, 0);
+            this.priceHistoryPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.priceHistoryPage.Name = "priceHistoryPage";
+            this.priceHistoryPage.Screen = null;
+            this.priceHistoryPage.Size = new System.Drawing.Size(892, 563);
+            this.priceHistoryPage.TabIndex = 0;
+            this.usersTabPage.Controls.Add(this.usersPage);
+            this.usersTabPage.Location = new System.Drawing.Point(4, 33);
+            this.usersTabPage.Name = "usersTabPage";
+            this.usersTabPage.Size = new System.Drawing.Size(892, 563);
+            this.usersTabPage.TabIndex = 4;
+            this.usersTabPage.Text = "Пользователи";
+            this.usersTabPage.UseVisualStyleBackColor = true;
+            this.usersPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usersPage.Location = new System.Drawing.Point(0, 0);
+            this.usersPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.usersPage.Name = "usersPage";
+            this.usersPage.Screen = null;
+            this.usersPage.Size = new System.Drawing.Size(892, 563);
+            this.usersPage.TabIndex = 0;
+            this.ordersTabPage.Controls.Add(this.ordersPage);
+            this.ordersTabPage.Location = new System.Drawing.Point(4, 33);
+            this.ordersTabPage.Name = "ordersTabPage";
+            this.ordersTabPage.Size = new System.Drawing.Size(892, 563);
+            this.ordersTabPage.TabIndex = 5;
+            this.ordersTabPage.Text = "Заказы";
+            this.ordersTabPage.UseVisualStyleBackColor = true;
+            this.ordersPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ordersPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.ordersPage.Location = new System.Drawing.Point(0, 0);
+            this.ordersPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ordersPage.Name = "ordersPage";
+            this.ordersPage.Size = new System.Drawing.Size(892, 563);
+            this.ordersPage.TabIndex = 0;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Tabs);
+            this.Controls.Add(this.tabs);
             this.Name = "MainScreen";
             this.Size = new System.Drawing.Size(900, 600);
-            this.Tabs.ResumeLayout(false);
-            this.ProfilePage.ResumeLayout(false);
-            this.GoodsPage.ResumeLayout(false);
+            this.tabs.ResumeLayout(false);
+            this.profileTabPage.ResumeLayout(false);
+            this.goodsTabPage.ResumeLayout(false);
+            this.categoryTabPage.ResumeLayout(false);
+            this.priceHistoryTabPage.ResumeLayout(false);
+            this.usersTabPage.ResumeLayout(false);
+            this.ordersTabPage.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
-        #endregion
+        private StoreAdminer.Components.CategoryPage categoryPage;
+        private System.Windows.Forms.TabPage categoryTabPage;
+        private StoreAdminer.Components.GoodsPage goodsPage;
+        private System.Windows.Forms.TabPage goodsTabPage;
+        private StoreAdminer.Components.OrdersPage ordersPage;
+        private System.Windows.Forms.TabPage ordersTabPage;
+        private StoreAdminer.Components.PriceHistoryPage priceHistoryPage;
+        private System.Windows.Forms.TabPage priceHistoryTabPage;
+        private StoreAdminer.Components.ProfilePage profilePage;
+        private System.Windows.Forms.TabPage profileTabPage;
+        private System.Windows.Forms.TabControl tabs;
+        private StoreAdminer.Components.UsersPage usersPage;
+        private System.Windows.Forms.TabPage usersTabPage;
 
-        private System.Windows.Forms.TabControl Tabs;
-        private System.Windows.Forms.TabPage ProfilePage;
-        private ProfilePage profilePage1;
-        private System.Windows.Forms.TabPage GoodsPage;
-        private GoodsPage goodsPage1;
-        private System.Windows.Forms.TabPage CategoryPage;
-        private CategoryPage categoryPage1;
-        private System.Windows.Forms.TabPage PriceHistoryPage;
-        private PriceHistoryPage priceHistoryPage1;
-        private System.Windows.Forms.TabPage UsersPage;
-        private UsersPage usersPage1;
+        #endregion
     }
 }

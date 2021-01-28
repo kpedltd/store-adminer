@@ -79,6 +79,12 @@
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\Navigator.cs" />
+    <Compile Include="Components\OrdersPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\OrdersPage.Designer.cs">
+      <DependentUpon>OrdersPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\Page.cs" />
     <Compile Include="Components\PriceHistoryPage.cs">
       <SubType>UserControl</SubType>
@@ -109,14 +115,16 @@
     <Compile Include="Data\Models\ErrorResponse.cs" />
     <Compile Include="Data\Models\Category.cs" />
     <Compile Include="Data\Models\Good.cs" />
+    <Compile Include="Data\Models\Order.cs" />
     <Compile Include="Data\Models\Price.cs" />
     <Compile Include="Data\Models\RefreshToken.cs" />
+    <Compile Include="Data\Models\Status.cs" />
     <Compile Include="Data\Models\User.cs" />
     <Compile Include="Data\Models\JwtToken.cs" />
     <Compile Include="Data\Request.cs" />
     <Compile Include="Data\Services\Endpoints.cs" />
     <Compile Include="Data\Services\GoodService.cs" />
-    <Compile Include="Data\Services\RefreshTokens.cs" />
+    <Compile Include="Data\Services\OrderService.cs" />
     <Compile Include="Data\Services\UserService.cs" />
     <Compile Include="Data\RefreshTokenExpiredException.cs" />
     <Compile Include="Extensions.cs" />
@@ -144,6 +152,12 @@
     <Compile Include="Forms\GoodForm.Designer.cs">
       <DependentUpon>GoodForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\OrdersPage.resx">
+      <DependentUpon>OrdersPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\PriceHistoryPage.resx">
       <DependentUpon>PriceHistoryPage.cs</DependentUpon>
@@ -184,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GoodForm.resx">
       <DependentUpon>GoodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>

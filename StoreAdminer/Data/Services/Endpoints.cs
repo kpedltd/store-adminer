@@ -16,6 +16,12 @@
         public static readonly string UPDATE_GOOD = "update-good";
         public static readonly string REMOVE_GOODS = "remove-goods";
         public static readonly string PRICE_HISTORY = "price-history";
+        public static readonly string ORDERS = "order";
+        public static readonly string ACCEPT_ORDER = "accept-order";
+        public static readonly string REJECT_ORDER = "reject-order";
+        public static readonly string SEND_ORDER = "send-order";
+        public static readonly string ORDER_ARRIVED = "order-arrived";
+        public static readonly string ORDER_GONE = "order-gone";
 
     }
 }

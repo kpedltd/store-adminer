@@ -11,7 +11,7 @@ namespace StoreAdminer.Components {
         public MainScreen() {
             InitializeComponent();
 
-            foreach (TabPage tab in Tabs.Controls) {
+            foreach (TabPage tab in tabs.Controls) {
                 var tabControls = tab.Controls.GetEnumerator();
                 if (tabControls.MoveNext()) {
                     var page = (tabControls.Current as UserControl);

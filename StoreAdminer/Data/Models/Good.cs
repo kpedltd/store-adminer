@@ -16,6 +16,9 @@ namespace StoreAdminer.Data.Models {
         [JsonProperty("price")]
         public decimal Price { get; set; } = -1;
 
+        [JsonProperty("amount")]
+        public int Amount { get; set; } = -1;
+
         [JsonProperty("manufacturedAt")]
         public DateTime ManufacturedAt { get; set; }
 
@@ -26,7 +29,8 @@ namespace StoreAdminer.Data.Models {
         public string Description { get; set; }
 
         public bool IsValid() {
-            return (Name != null && PartNumber != -1 && ManufacturedAt != null & CategoryId != -1 && Price != -1);
+            return (Name != null && PartNumber != -1 && ManufacturedAt != null 
+                && CategoryId != -1 && Price != -1 && Amount != -1);
         }
 
     }

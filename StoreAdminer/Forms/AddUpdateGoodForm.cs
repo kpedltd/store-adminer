@@ -44,6 +44,7 @@ namespace StoreAdminer.Forms {
                 PartNumber = partNumber,
                 ManufacturedAt = ManufacturedAtDateTimePicker.Value,
                 CategoryId = (int)CategoryComboBox.SelectedValue,
+                Amount = (int) AmountNumeric.Value,
                 Price = price,
                 Description = DescriptionTextBox.Text.GetOrNull()
             };
@@ -89,6 +90,7 @@ namespace StoreAdminer.Forms {
                 PartNumberTextBox.Text = Item.PartNumber.ToString();
                 ManufacturedAtDateTimePicker.Value = Item.ManufacturedAt;
                 CategoryComboBox.SelectedValue = Item.CategoryId;
+                AmountNumeric.Value = Item.Amount;
                 PriceTextBox.Text = Item.Price.ToString();
                 DescriptionTextBox.Text = Item.Description;
 

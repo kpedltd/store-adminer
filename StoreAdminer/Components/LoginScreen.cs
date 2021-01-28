@@ -29,7 +29,7 @@ namespace StoreAdminer.Components {
                 MessageBox.Show(err.Message, caption);
 
             } catch (Exception err) {
-                MessageBox.Show(err.StackTrace, "Error");
+                MessageBox.Show(err.StackTrace, "Ошибка");
 
             } finally {
                 LoginButton.Enabled = true;
