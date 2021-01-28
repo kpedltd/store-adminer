@@ -4,38 +4,31 @@ using StoreAdminer.Data.Services;
 using System;
 using System.Windows.Forms;
 
-namespace StoreAdminer.Components
-{
-    public partial class ProfilePage : UserControl, Page
-    {
+namespace StoreAdminer.Components {
+    public partial class ProfilePage : UserControl, Page {
+
         public Screen Screen { get; set; }
         private readonly UserService userService = UserService.GetInstance();
 
-        public ProfilePage()
-        {
+        public ProfilePage() {
             InitializeComponent();
         }
 
-        private async void OnLoad(object sender, EventArgs e)
-        {
-            try
-            {
+        private async void OnLoad(object sender, EventArgs e) {
+            try {
                 var profile = await userService.GetProfile();
                 UpdateView(profile);
-            }
-            catch (HttpError err)
-            {
+
+            } catch (HttpError err) {
                 var caption = $" {err.StatusCode} - {(int)err.StatusCode}";
                 MessageBox.Show(err.Message, caption);
-            }
-            catch (Exception err)
-            {
+
+            } catch (Exception err) {
                 MessageBox.Show(err.StackTrace, "Error");
             }
         }
 
-        private void UpdateView(User profile)
-        {
+        private void UpdateView(User profile) {
             LoginLabel.Text = profile.Login;
             LastNameLabel.Text = profile.Lastname;
             FirstNameLabel.Text = profile.Firstname;
@@ -44,28 +37,25 @@ namespace StoreAdminer.Components
             LastLoginIpLabel.Text = profile.LastLoginIp;
         }
 
-        private async void LogoutButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
+        private async void LogoutButton_Click(object sender, EventArgs e) {
+            try {
                 await userService.Logout();
 
                 Screen.Navigator.NavigateTo(new LoginScreen());
-            }
-            catch (HttpError err)
-            {
-                var caption = $" {err.StatusCode} - {(int)err.StatusCode}";
+
+            } catch(HttpError err) {
+                var caption = $" {err.StatusCode} - {(int) err.StatusCode}";
                 MessageBox.Show(err.Message, caption);
-            }
-            catch (RefreshTokenExpiredException ex)
-            {
+
+            } catch(RefreshTokenExpiredException ex) {
                 MessageBox.Show("Refresh token is expired", "Error");
                 Screen.Navigator.NavigateTo(new LoginScreen());
-            }
-            catch (Exception err)
-            {
+
+
+            } catch (Exception err) {
                 Console.WriteLine(err.StackTrace);
                 MessageBox.Show(err.Message, "Error");
+
             }
         }
     }

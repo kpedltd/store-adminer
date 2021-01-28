@@ -1,13 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace StoreAdminer.Data.Models
-{
-    public class User
-    {
+namespace StoreAdminer.Data.Models {
+    public class User {
+
         [JsonProperty("id")]
         public int Id { get; set; }
-
+        
         [JsonProperty("login")]
         public string Login { get; set; }
 
@@ -31,5 +30,6 @@ namespace StoreAdminer.Data.Models
 
         [JsonProperty("lastLoginIp")]
         public string LastLoginIp { get; set; }
+
     }
 }

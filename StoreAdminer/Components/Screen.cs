@@ -1,27 +1,25 @@
 ﻿using System.Windows.Forms;
 
-namespace StoreAdminer.Components
-{
-    public interface Screen
-    {
-        DockStyle Dock
-        {
+namespace StoreAdminer.Components {
+    public interface Screen {
+
+        DockStyle Dock {
             get;
             set;
         }
 
-        Control Parent
-        {
+        Control Parent {
             get;
             set;
         }
 
-        Navigator Navigator
-        {
+
+        Navigator Navigator {
             get;
             set;
         }
 
         void Dispose();
+
     }
 }

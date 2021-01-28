@@ -1,7 +1,6 @@
 ﻿using System;
 
-namespace StoreAdminer.Data
-{
-    internal class RefreshTokenExpiredException : Exception
-    { }
+namespace StoreAdminer.Data {
+    class RefreshTokenExpiredException : Exception { }
+
 }

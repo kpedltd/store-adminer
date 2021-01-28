@@ -1,13 +1,11 @@
 ﻿using System.Windows.Forms;
 
-namespace StoreAdminer.Components
-{
-    public class ScreenContainer : Panel, Navigator
-    {
+namespace StoreAdminer.Components {
+    public class ScreenContainer : Panel, Navigator {
+
         private Screen _currentScreen;
 
-        public void NavigateTo(Screen screen)
-        {
+        public void NavigateTo(Screen screen) {
             screen.Parent = this;
             screen.Dock = DockStyle.Fill;
             screen.Navigator = this;
@@ -15,5 +13,6 @@ namespace StoreAdminer.Components
             _currentScreen?.Dispose();
             _currentScreen = screen;
         }
+
     }
 }

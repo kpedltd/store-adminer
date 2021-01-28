@@ -1,6 +1,4 @@
-﻿namespace StoreAdminer.Data.Services
-{
-    internal class RefreshTokens
-    {
+﻿namespace StoreAdminer.Data.Services {
+    internal class RefreshTokens {
     }
 }

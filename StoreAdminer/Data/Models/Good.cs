@@ -1,13 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace StoreAdminer.Data.Models
-{
-    public class Good
-    {
+namespace StoreAdminer.Data.Models {
+    public class Good {
+
         [JsonProperty("id")]
         public int Id { get; set; }
-
+        
         [JsonProperty("name")]
         public string Name { get; set; }
 
@@ -26,9 +25,9 @@ namespace StoreAdminer.Data.Models
         [JsonProperty("description")]
         public string Description { get; set; }
 
-        public bool IsValid()
-        {
+        public bool IsValid() {
             return (Name != null && PartNumber != -1 && ManufacturedAt != null & CategoryId != -1 && Price != -1);
         }
+
     }
 }

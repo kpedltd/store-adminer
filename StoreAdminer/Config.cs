@@ -1,7 +1,7 @@
-﻿namespace StoreAdminer
-{
-    internal class Config
-    {
+﻿namespace StoreAdminer {
+    class Config {
+
         public static string HOST = "http://localhost:3000";
+
     }
 }
