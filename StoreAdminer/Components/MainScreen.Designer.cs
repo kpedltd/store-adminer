@@ -47,9 +47,6 @@ namespace StoreAdminer.Components {
             this.usersTabPage.SuspendLayout();
             this.ordersTabPage.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabs
-            // 
             this.tabs.Controls.Add(this.profileTabPage);
             this.tabs.Controls.Add(this.goodsTabPage);
             this.tabs.Controls.Add(this.categoryTabPage);
@@ -64,9 +61,6 @@ namespace StoreAdminer.Components {
             this.tabs.SelectedIndex = 0;
             this.tabs.Size = new System.Drawing.Size(900, 600);
             this.tabs.TabIndex = 0;
-            // 
-            // profileTabPage
-            // 
             this.profileTabPage.Controls.Add(this.profilePage);
             this.profileTabPage.Location = new System.Drawing.Point(4, 33);
             this.profileTabPage.Name = "profileTabPage";
@@ -75,9 +69,6 @@ namespace StoreAdminer.Components {
             this.profileTabPage.TabIndex = 0;
             this.profileTabPage.Text = "Профиль";
             this.profileTabPage.UseVisualStyleBackColor = true;
-            // 
-            // profilePage
-            // 
             this.profilePage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.profilePage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.profilePage.Location = new System.Drawing.Point(3, 3);
@@ -86,9 +77,6 @@ namespace StoreAdminer.Components {
             this.profilePage.Screen = null;
             this.profilePage.Size = new System.Drawing.Size(886, 557);
             this.profilePage.TabIndex = 0;
-            // 
-            // goodsTabPage
-            // 
             this.goodsTabPage.Controls.Add(this.goodsPage);
             this.goodsTabPage.Location = new System.Drawing.Point(4, 33);
             this.goodsTabPage.Name = "goodsTabPage";
@@ -96,9 +84,6 @@ namespace StoreAdminer.Components {
             this.goodsTabPage.TabIndex = 1;
             this.goodsTabPage.Text = "Товары";
             this.goodsTabPage.UseVisualStyleBackColor = true;
-            // 
-            // goodsPage
-            // 
             this.goodsPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.goodsPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.goodsPage.Location = new System.Drawing.Point(0, 0);
@@ -107,9 +92,6 @@ namespace StoreAdminer.Components {
             this.goodsPage.Screen = null;
             this.goodsPage.Size = new System.Drawing.Size(892, 563);
             this.goodsPage.TabIndex = 0;
-            // 
-            // categoryTabPage
-            // 
             this.categoryTabPage.Controls.Add(this.categoryPage);
             this.categoryTabPage.Location = new System.Drawing.Point(4, 33);
             this.categoryTabPage.Name = "categoryTabPage";
@@ -117,9 +99,6 @@ namespace StoreAdminer.Components {
             this.categoryTabPage.TabIndex = 2;
             this.categoryTabPage.Text = "Категории";
             this.categoryTabPage.UseVisualStyleBackColor = true;
-            // 
-            // categoryPage
-            // 
             this.categoryPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.categoryPage.Location = new System.Drawing.Point(0, 0);
             this.categoryPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -127,9 +106,6 @@ namespace StoreAdminer.Components {
             this.categoryPage.Screen = null;
             this.categoryPage.Size = new System.Drawing.Size(892, 563);
             this.categoryPage.TabIndex = 0;
-            // 
-            // priceHistoryTabPage
-            // 
             this.priceHistoryTabPage.Controls.Add(this.priceHistoryPage);
             this.priceHistoryTabPage.Location = new System.Drawing.Point(4, 33);
             this.priceHistoryTabPage.Name = "priceHistoryTabPage";
@@ -137,9 +113,6 @@ namespace StoreAdminer.Components {
             this.priceHistoryTabPage.TabIndex = 3;
             this.priceHistoryTabPage.Text = "История цен";
             this.priceHistoryTabPage.UseVisualStyleBackColor = true;
-            // 
-            // priceHistoryPage
-            // 
             this.priceHistoryPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.priceHistoryPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.priceHistoryPage.Location = new System.Drawing.Point(0, 0);
@@ -148,9 +121,6 @@ namespace StoreAdminer.Components {
             this.priceHistoryPage.Screen = null;
             this.priceHistoryPage.Size = new System.Drawing.Size(892, 563);
             this.priceHistoryPage.TabIndex = 0;
-            // 
-            // usersTabPage
-            // 
             this.usersTabPage.Controls.Add(this.usersPage);
             this.usersTabPage.Location = new System.Drawing.Point(4, 33);
             this.usersTabPage.Name = "usersTabPage";
@@ -158,9 +128,6 @@ namespace StoreAdminer.Components {
             this.usersTabPage.TabIndex = 4;
             this.usersTabPage.Text = "Пользователи";
             this.usersTabPage.UseVisualStyleBackColor = true;
-            // 
-            // usersPage
-            // 
             this.usersPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usersPage.Location = new System.Drawing.Point(0, 0);
             this.usersPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -168,9 +135,6 @@ namespace StoreAdminer.Components {
             this.usersPage.Screen = null;
             this.usersPage.Size = new System.Drawing.Size(892, 563);
             this.usersPage.TabIndex = 0;
-            // 
-            // ordersTabPage
-            // 
             this.ordersTabPage.Controls.Add(this.ordersPage);
             this.ordersTabPage.Location = new System.Drawing.Point(4, 33);
             this.ordersTabPage.Name = "ordersTabPage";
@@ -178,9 +142,6 @@ namespace StoreAdminer.Components {
             this.ordersTabPage.TabIndex = 5;
             this.ordersTabPage.Text = "Заказы";
             this.ordersTabPage.UseVisualStyleBackColor = true;
-            // 
-            // ordersPage
-            // 
             this.ordersPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ordersPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.ordersPage.Location = new System.Drawing.Point(0, 0);
@@ -189,9 +150,6 @@ namespace StoreAdminer.Components {
             this.ordersPage.Screen = null;
             this.ordersPage.Size = new System.Drawing.Size(892, 563);
             this.ordersPage.TabIndex = 0;
-            // 
-            // statisticsTabPage
-            // 
             this.statisticsTabPage.Controls.Add(this.statisticsPage);
             this.statisticsTabPage.Location = new System.Drawing.Point(4, 33);
             this.statisticsTabPage.Name = "statisticsTabPage";
@@ -199,9 +157,6 @@ namespace StoreAdminer.Components {
             this.statisticsTabPage.TabIndex = 6;
             this.statisticsTabPage.Text = "Статистика продаж";
             this.statisticsTabPage.UseVisualStyleBackColor = true;
-            // 
-            // statisticsPage
-            // 
             this.statisticsPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statisticsPage.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.statisticsPage.Location = new System.Drawing.Point(0, 0);
@@ -210,9 +165,6 @@ namespace StoreAdminer.Components {
             this.statisticsPage.Screen = null;
             this.statisticsPage.Size = new System.Drawing.Size(892, 563);
             this.statisticsPage.TabIndex = 0;
-            // 
-            // MainScreen
-            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabs);
@@ -238,8 +190,8 @@ namespace StoreAdminer.Components {
         private System.Windows.Forms.TabPage priceHistoryTabPage;
         private StoreAdminer.Components.ProfilePage profilePage;
         private System.Windows.Forms.TabPage profileTabPage;
-        private System.Windows.Forms.TabPage statisticsTabPage;
         private StoreAdminer.Components.StatisticsPage statisticsPage;
+        private System.Windows.Forms.TabPage statisticsTabPage;
         private System.Windows.Forms.TabControl tabs;
         private StoreAdminer.Components.UsersPage usersPage;
         private System.Windows.Forms.TabPage usersTabPage;

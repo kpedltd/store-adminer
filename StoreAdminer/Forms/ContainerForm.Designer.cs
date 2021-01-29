@@ -32,16 +32,16 @@ namespace StoreAdminer.Forms {
             this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Container.Location = new System.Drawing.Point(0, 0);
             this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(878, 544);
+            this.Container.Size = new System.Drawing.Size(1178, 744);
             this.Container.TabIndex = 0;
             // 
             // ContainerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 544);
+            this.ClientSize = new System.Drawing.Size(1178, 744);
             this.Controls.Add(this.Container);
-            this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "ContainerForm";
@@ -49,11 +49,10 @@ namespace StoreAdminer.Forms {
             this.Text = "Store Adminer";
             this.Load += new System.EventHandler(this.ContainerForm_Load);
             this.ResumeLayout(false);
-
         }
 
-        #endregion
+        private StoreAdminer.Components.ScreenContainer Container;
 
-        private Components.ScreenContainer Container;
+        #endregion
     }
 }
