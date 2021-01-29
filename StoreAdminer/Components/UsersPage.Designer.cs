@@ -27,27 +27,9 @@ namespace StoreAdminer.Components {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.RootTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.gridView = new System.Windows.Forms.DataGridView();
-            this.ButtonsFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
-            this.RootTableLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.gridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // RootTableLayout
-            // 
-            this.RootTableLayout.ColumnCount = 1;
-            this.RootTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.RootTableLayout.Controls.Add(this.gridView, 0, 0);
-            this.RootTableLayout.Controls.Add(this.ButtonsFlowLayout, 0, 1);
-            this.RootTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RootTableLayout.Location = new System.Drawing.Point(0, 0);
-            this.RootTableLayout.Name = "RootTableLayout";
-            this.RootTableLayout.RowCount = 2;
-            this.RootTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.RootTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.RootTableLayout.Size = new System.Drawing.Size(900, 600);
-            this.RootTableLayout.TabIndex = 1;
             // 
             // gridView
             // 
@@ -75,41 +57,29 @@ namespace StoreAdminer.Components {
             this.gridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.gridView.Location = new System.Drawing.Point(3, 3);
+            this.gridView.Location = new System.Drawing.Point(0, 0);
             this.gridView.Name = "gridView";
             this.gridView.RowHeadersVisible = false;
             this.gridView.RowHeadersWidth = 62;
             this.gridView.RowTemplate.Height = 28;
             this.gridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridView.Size = new System.Drawing.Size(894, 529);
-            this.gridView.TabIndex = 0;
+            this.gridView.Size = new System.Drawing.Size(900, 600);
+            this.gridView.TabIndex = 1;
             this.gridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnCellDoubleClick);
-            // 
-            // ButtonsFlowLayout
-            // 
-            this.ButtonsFlowLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonsFlowLayout.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.ButtonsFlowLayout.Location = new System.Drawing.Point(3, 538);
-            this.ButtonsFlowLayout.Name = "ButtonsFlowLayout";
-            this.ButtonsFlowLayout.Size = new System.Drawing.Size(894, 59);
-            this.ButtonsFlowLayout.TabIndex = 1;
             // 
             // UsersPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.RootTableLayout);
+            this.Controls.Add(this.gridView);
             this.Name = "UsersPage";
             this.Size = new System.Drawing.Size(900, 600);
             this.Load += new System.EventHandler(this.OnLoad);
-            this.RootTableLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.gridView)).EndInit();
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.FlowLayoutPanel ButtonsFlowLayout;
         private System.Windows.Forms.DataGridView gridView;
-        private System.Windows.Forms.TableLayoutPanel RootTableLayout;
 
         #endregion
     }

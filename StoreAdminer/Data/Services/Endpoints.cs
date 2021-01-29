@@ -22,6 +22,8 @@
         public static readonly string SEND_ORDER = "send-order";
         public static readonly string ORDER_ARRIVED = "order-arrived";
         public static readonly string ORDER_GONE = "order-gone";
+        public static readonly string GOOD_STATISTICS = "good-statistics";
+        public static readonly string CATEGORY_STATISTICS = "good-statistics";
 
     }
 }

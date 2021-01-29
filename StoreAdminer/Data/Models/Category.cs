@@ -9,6 +9,9 @@ namespace StoreAdminer.Data.Models {
         
         [JsonProperty("name")]
         public string Name { get; set; }
+        
+        [JsonProperty("amount")]
+        public int Amount { get; set; }
 
         public bool IsValid() {
             return Name != null;

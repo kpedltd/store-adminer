@@ -102,6 +102,12 @@
     <Compile Include="Components\ScreenContainer.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Components\StatisticsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\StatisticsPage.Designer.cs">
+      <DependentUpon>StatisticsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\UsersPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +131,7 @@
     <Compile Include="Data\Services\Endpoints.cs" />
     <Compile Include="Data\Services\GoodService.cs" />
     <Compile Include="Data\Services\OrderService.cs" />
+    <Compile Include="Data\Services\StatisticsService.cs" />
     <Compile Include="Data\Services\UserService.cs" />
     <Compile Include="Data\RefreshTokenExpiredException.cs" />
     <Compile Include="Extensions.cs" />
@@ -186,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\StatisticsPage.resx">
+      <DependentUpon>StatisticsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UsersPage.resx">
       <DependentUpon>UsersPage.cs</DependentUpon>
