@@ -70,7 +70,6 @@ namespace StoreAdminer.Components {
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OrdersPage";
             this.Size = new System.Drawing.Size(900, 600);
-            this.Load += new System.EventHandler(this.OnLoad);
             this.rootTableLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.gridView)).EndInit();
             this.ResumeLayout(false);

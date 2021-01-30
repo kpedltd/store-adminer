@@ -17,7 +17,8 @@ namespace StoreAdminer.Data.Services {
         private readonly CallFactoryProvider callFactory = CallFactoryProvider.GetInstance();
 
         private JwtToken _accessToken;
-        public JwtToken AccessToken {
+
+        private JwtToken AccessToken {
             set {
                 _accessToken = value;
                 AuthenticationHeaderValue header = null;
@@ -26,9 +27,7 @@ namespace StoreAdminer.Data.Services {
                 }
                 callFactory.Headers.Authorization = header;
             }
-            get {
-                return _accessToken;
-            }
+            get => _accessToken;
         }
 
         private readonly Hashtable _cachedUsers = new Hashtable();

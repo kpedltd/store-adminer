@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreAdminer", "StoreAdminer\StoreAdminer.csproj", "{C7BB8AD3-F1A9-4C81-BE84-C00A78F4D70D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreAdminerTest", "StoreAdminerTest\StoreAdminerTest.csproj", "{FB8F05CE-198C-4258-A4FE-5BF0C4CE6E55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C7BB8AD3-F1A9-4C81-BE84-C00A78F4D70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7BB8AD3-F1A9-4C81-BE84-C00A78F4D70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7BB8AD3-F1A9-4C81-BE84-C00A78F4D70D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8F05CE-198C-4258-A4FE-5BF0C4CE6E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8F05CE-198C-4258-A4FE-5BF0C4CE6E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8F05CE-198C-4258-A4FE-5BF0C4CE6E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8F05CE-198C-4258-A4FE-5BF0C4CE6E55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

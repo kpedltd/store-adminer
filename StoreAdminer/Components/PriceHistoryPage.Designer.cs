@@ -19,8 +19,8 @@ namespace StoreAdminer.Components {
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
@@ -30,9 +30,9 @@ namespace StoreAdminer.Components {
             this.goodIdNumeric = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.RootTableLayout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.gridView)).BeginInit();
             this.bottomFlowLayout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.goodIdNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.goodIdNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // RootTableLayout
@@ -103,26 +103,25 @@ namespace StoreAdminer.Components {
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.RootTableLayout);
-            this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PriceHistoryPage";
             this.Size = new System.Drawing.Size(900, 600);
             this.Load += new System.EventHandler(this.OnLoad);
             this.RootTableLayout.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.gridView)).EndInit();
             this.bottomFlowLayout.ResumeLayout(false);
             this.bottomFlowLayout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.goodIdNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.goodIdNumeric)).EndInit();
             this.ResumeLayout(false);
-
         }
 
-        #endregion
-
-        private System.Windows.Forms.TableLayoutPanel RootTableLayout;
-        private System.Windows.Forms.DataGridView gridView;
         private System.Windows.Forms.FlowLayoutPanel bottomFlowLayout;
         private System.Windows.Forms.NumericUpDown goodIdNumeric;
+        private System.Windows.Forms.DataGridView gridView;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel RootTableLayout;
+
+        #endregion
     }
 }

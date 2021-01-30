@@ -23,6 +23,5 @@ namespace StoreAdminer.Data.Services {
         public async Task<List<Category>> GetCategoryStatistics() {
             return await callFactory.GetRequestAsync<List<Category>>(Endpoints.CATEGORY_STATISTICS);
         }
-        
     }
 }
