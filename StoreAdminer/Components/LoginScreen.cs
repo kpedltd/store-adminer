@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace StoreAdminer.Components {
     public partial class LoginScreen : UserControl, Screen {
-
+        
         private readonly UserService userService = UserService.GetInstance();
         public Navigator Navigator { get; set; }
 

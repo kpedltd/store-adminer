@@ -118,8 +118,10 @@
     </Compile>
     <Compile Include="Config.cs" />
     <Compile Include="Data\CallFactoryProvider.cs" />
+    <Compile Include="Data\Chain.cs" />
     <Compile Include="Data\CookieProvider.cs" />
     <Compile Include="Data\HttpError.cs" />
+    <Compile Include="Data\Interceptor.cs" />
     <Compile Include="Data\Models\ErrorResponse.cs" />
     <Compile Include="Data\Models\Category.cs" />
     <Compile Include="Data\Models\Good.cs" />
@@ -129,6 +131,7 @@
     <Compile Include="Data\Models\Status.cs" />
     <Compile Include="Data\Models\User.cs" />
     <Compile Include="Data\Models\JwtToken.cs" />
+    <Compile Include="Data\RealInterceptorChain.cs" />
     <Compile Include="Data\Request.cs" />
     <Compile Include="Data\Services\Endpoints.cs" />
     <Compile Include="Data\Services\GoodService.cs" />
@@ -229,6 +232,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -19,8 +19,8 @@ namespace StoreAdminer.Components {
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
@@ -82,22 +82,20 @@ namespace StoreAdminer.Components {
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 24);
+            this.label3.Size = new System.Drawing.Size(0, 24);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Логин:";
             // 
             // LoginLabel
             // 
             this.LoginLabel.AutoSize = true;
-            this.LoginLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginLabel.Location = new System.Drawing.Point(68, 0);
+            this.LoginLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.LoginLabel.Location = new System.Drawing.Point(9, 0);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(66, 24);
+            this.LoginLabel.Size = new System.Drawing.Size(0, 24);
             this.LoginLabel.TabIndex = 1;
-            this.LoginLabel.Text = "<none>";
             // 
             // flowLayoutPanel1
             // 
@@ -112,22 +110,20 @@ namespace StoreAdminer.Components {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 24);
+            this.label1.Size = new System.Drawing.Size(0, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Имя:";
             // 
             // FirstNameLabel
             // 
             this.FirstNameLabel.AutoSize = true;
-            this.FirstNameLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FirstNameLabel.Location = new System.Drawing.Point(56, 0);
+            this.FirstNameLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.FirstNameLabel.Location = new System.Drawing.Point(9, 0);
             this.FirstNameLabel.Name = "FirstNameLabel";
-            this.FirstNameLabel.Size = new System.Drawing.Size(66, 24);
+            this.FirstNameLabel.Size = new System.Drawing.Size(0, 24);
             this.FirstNameLabel.TabIndex = 1;
-            this.FirstNameLabel.Text = "<none>";
             // 
             // flowLayoutPanel2
             // 
@@ -142,22 +138,20 @@ namespace StoreAdminer.Components {
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 24);
+            this.label2.Size = new System.Drawing.Size(0, 24);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Фамилия:";
             // 
             // LastNameLabel
             // 
             this.LastNameLabel.AutoSize = true;
-            this.LastNameLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LastNameLabel.Location = new System.Drawing.Point(93, 0);
+            this.LastNameLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.LastNameLabel.Location = new System.Drawing.Point(9, 0);
             this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(66, 24);
+            this.LastNameLabel.Size = new System.Drawing.Size(0, 24);
             this.LastNameLabel.TabIndex = 1;
-            this.LastNameLabel.Text = "<none>";
             // 
             // flowLayoutPanel4
             // 
@@ -172,22 +166,20 @@ namespace StoreAdminer.Components {
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 24);
+            this.label4.Size = new System.Drawing.Size(0, 24);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Зарегистрирован:";
             // 
             // CreatedAtLabel
             // 
             this.CreatedAtLabel.AutoSize = true;
-            this.CreatedAtLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CreatedAtLabel.Location = new System.Drawing.Point(155, 0);
+            this.CreatedAtLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.CreatedAtLabel.Location = new System.Drawing.Point(9, 0);
             this.CreatedAtLabel.Name = "CreatedAtLabel";
-            this.CreatedAtLabel.Size = new System.Drawing.Size(66, 24);
+            this.CreatedAtLabel.Size = new System.Drawing.Size(0, 24);
             this.CreatedAtLabel.TabIndex = 1;
-            this.CreatedAtLabel.Text = "<none>";
             // 
             // flowLayoutPanel5
             // 
@@ -202,22 +194,20 @@ namespace StoreAdminer.Components {
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 24);
+            this.label5.Size = new System.Drawing.Size(0, 24);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Последний вход:";
             // 
             // LastLoginLabel
             // 
             this.LastLoginLabel.AutoSize = true;
-            this.LastLoginLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LastLoginLabel.Location = new System.Drawing.Point(150, 0);
+            this.LastLoginLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.LastLoginLabel.Location = new System.Drawing.Point(9, 0);
             this.LastLoginLabel.Name = "LastLoginLabel";
-            this.LastLoginLabel.Size = new System.Drawing.Size(66, 24);
+            this.LastLoginLabel.Size = new System.Drawing.Size(0, 24);
             this.LastLoginLabel.TabIndex = 1;
-            this.LastLoginLabel.Text = "<none>";
             // 
             // flowLayoutPanel6
             // 
@@ -232,28 +222,26 @@ namespace StoreAdminer.Components {
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 24);
+            this.label6.Size = new System.Drawing.Size(0, 24);
             this.label6.TabIndex = 0;
-            this.label6.Text = "IP:";
             // 
             // LastLoginIpLabel
             // 
             this.LastLoginIpLabel.AutoSize = true;
-            this.LastLoginIpLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LastLoginIpLabel.Location = new System.Drawing.Point(40, 0);
+            this.LastLoginIpLabel.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.LastLoginIpLabel.Location = new System.Drawing.Point(9, 0);
             this.LastLoginIpLabel.Name = "LastLoginIpLabel";
-            this.LastLoginIpLabel.Size = new System.Drawing.Size(66, 24);
+            this.LastLoginIpLabel.Size = new System.Drawing.Size(0, 24);
             this.LastLoginIpLabel.TabIndex = 1;
-            this.LastLoginIpLabel.Text = "<none>";
             // 
             // LogoutButton
             // 
-            this.LogoutButton.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LogoutButton.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.LogoutButton.Location = new System.Drawing.Point(4, 262);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.LogoutButton.Name = "LogoutButton";
             this.LogoutButton.Size = new System.Drawing.Size(286, 61);
             this.LogoutButton.TabIndex = 5;
@@ -266,11 +254,10 @@ namespace StoreAdminer.Components {
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ProfileFlowLayout);
-            this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ProfilePage";
             this.Size = new System.Drawing.Size(831, 636);
-            this.Load += new System.EventHandler(this.OnLoad);
             this.ProfileFlowLayout.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
@@ -285,30 +272,29 @@ namespace StoreAdminer.Components {
             this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
-        #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel ProfileFlowLayout;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label FirstNameLabel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label LastNameLabel;
-        private System.Windows.Forms.Button LogoutButton;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label LoginLabel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label CreatedAtLabel;
+        private System.Windows.Forms.Label FirstNameLabel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label LastLoginLabel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label LastLoginIpLabel;
+        private System.Windows.Forms.Label LastLoginLabel;
+        private System.Windows.Forms.Label LastNameLabel;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.Button LogoutButton;
+        private System.Windows.Forms.FlowLayoutPanel ProfileFlowLayout;
+
+        #endregion
     }
 }

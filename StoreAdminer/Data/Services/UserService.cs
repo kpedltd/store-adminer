@@ -1,7 +1,9 @@
-﻿using StoreAdminer.Data.Models;
+﻿using System;
+using StoreAdminer.Data.Models;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -18,18 +20,6 @@ namespace StoreAdminer.Data.Services {
 
         private JwtToken _accessToken;
 
-        private JwtToken AccessToken {
-            set {
-                _accessToken = value;
-                AuthenticationHeaderValue header = null;
-                if (value != null) {
-                    header = new AuthenticationHeaderValue("Bearer", value.Token);
-                }
-                callFactory.Headers.Authorization = header;
-            }
-            get => _accessToken;
-        }
-
         private readonly Hashtable _cachedUsers = new Hashtable();
         private readonly Hashtable _cachedTokens = new Hashtable();
 
@@ -38,20 +28,34 @@ namespace StoreAdminer.Data.Services {
         }
 
         private UserService() {
-            callFactory.RequestInterceptor = Intercept;
-        }
+            callFactory.AddInterceptor(async chain => {
+                var response = await chain.Proceed(chain.Request);
+                var body = await response.Content.ReadAsStringAsync();
+                
+                Debug.WriteLine(body);
 
-        private async Task<HttpResponseMessage> Intercept(Request request) {
+                return response;
+            });
+            
+            callFactory.AddInterceptor(async chain => {
+                var request = chain.Request;
 
-            if (AccessToken != null && AccessToken.IsExpired()) {
-                AccessToken = null;
-                await RefreshToken();
-            }
-            return await request.Invoke();
+                if (_accessToken != null) {
+                    if (_accessToken.IsExpired()) {
+                        _accessToken = null;
+                        await RefreshToken();
+                    }
+                    var token = _accessToken.Token;
+                    request.Headers.Authorization
+                        = new AuthenticationHeaderValue("Bearer", token);
+                }
+
+                return await chain.Proceed(request);
+            });
         }
 
         public async Task<bool> IsLoggedIn() {
-            if (AccessToken != null) {
+            if (_accessToken != null) {
                 return true;
             }
 
@@ -71,7 +75,8 @@ namespace StoreAdminer.Data.Services {
 
         public async Task RefreshToken() {
             try {
-                AccessToken  = await callFactory.PostRequestAsync<JwtToken>(Endpoints.REFRESH_TOKEN);
+                _accessToken  = await callFactory.PostRequestAsync<JwtToken>(Endpoints.REFRESH_TOKEN);
+                
             } catch (HttpError) {
                 RemoveRefreshToken();
                 throw new RefreshTokenExpiredException();
@@ -96,12 +101,12 @@ namespace StoreAdminer.Data.Services {
                 { "password", password }
             };
 
-            AccessToken  = await callFactory.PostRequestAsync<JwtToken>(Endpoints.LOGIN, query, body);
+            _accessToken = await callFactory.PostRequestAsync<JwtToken>(Endpoints.LOGIN, query, body);
         }
 
         public async Task Logout() {
             await RevokeRefreshToken();
-            AccessToken = null;
+            _accessToken = null;
         }
 
         public async Task<User> GetProfile() {

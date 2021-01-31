@@ -77,7 +77,6 @@ namespace StoreAdminer.Components {
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(54, 24);
             this.LoginLabel.TabIndex = 0;
-            this.LoginLabel.Text = "Логин";
             // 
             // LoginTextBox
             // 
@@ -98,7 +97,6 @@ namespace StoreAdminer.Components {
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(68, 24);
             this.PasswordLabel.TabIndex = 2;
-            this.PasswordLabel.Text = "Пароль";
             // 
             // PasswordTextBox
             // 

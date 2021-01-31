@@ -16,11 +16,7 @@ namespace StoreAdminer.Data {
         private static CallFactoryProvider _instance;
 
         private readonly CookieProvider _cookieProvider = CookieProvider.GetInstance();
-
-        public delegate Task<HttpResponseMessage> Interceptor(Request request);
-        public Interceptor RequestInterceptor;
-
-        public HttpRequestHeaders Headers => _httpClient.DefaultRequestHeaders;
+        private readonly List<Interceptor> _interceptors = new List<Interceptor>();
 
         public static CallFactoryProvider GetInstance() {
             return _instance ?? (_instance = new CallFactoryProvider());
@@ -48,6 +44,14 @@ namespace StoreAdminer.Data {
 
         private void OnApplicationExit(object sender, EventArgs e) {
             _cookieProvider.SaveCookieContainer();
+        }
+
+        public void AddInterceptor(Interceptor interceptor) {
+            _interceptors.Add(interceptor);
+        }
+        
+        public void RemoveInterceptor(Interceptor interceptor) {
+            _interceptors.Remove(interceptor);
         }
 
         public Dictionary<string, Cookie> GetCookies() {
@@ -99,8 +103,9 @@ namespace StoreAdminer.Data {
 
         private async Task<string> SendRequest(Request request) {
             HttpResponseMessage response;
-            if (RequestInterceptor != null) {
-                response = await RequestInterceptor(request);
+            if (_interceptors.Count > 0) {
+                var chain = new RealInterceptorChain(request, 0, _interceptors);
+                response = await chain.Proceed(request);
             } else {
                 response = await request.Invoke();
             }
